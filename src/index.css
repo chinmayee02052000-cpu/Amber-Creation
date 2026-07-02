@@ -1,0 +1,59 @@
+@import url('https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@300;400;500;600;700;800&family=JetBrains+Mono:wght@400;500;600&display=swap');
+@import "tailwindcss";
+
+@theme {
+  --font-sans: "Plus Jakarta Sans", "Inter", system-ui, sans-serif;
+  --font-mono: "JetBrains Mono", ui-monospace, SFMono-Regular, monospace;
+  
+  /* Amber Brand Palette */
+  --color-amber-primary: #FF6B00;
+  --color-amber-secondary: #FF8A3D;
+  --color-amber-dark: #CC5500;
+  --color-amber-light: #FFF0E6;
+  --color-amber-bg: #F8F9FC;
+  --color-amber-border: #ECECEC;
+  
+  /* Status Colors */
+  --color-status-completed: #10B981;
+  --color-status-working: #3B82F6;
+  --color-status-kam: #8B5CF6;
+  --color-status-pending: #F59E0B;
+  --color-status-help: #EF4444;
+}
+
+/* Base custom styles to guarantee professional rendering and scrollbar beauty */
+body {
+  font-family: var(--font-sans);
+  background-color: var(--color-amber-bg);
+  color: #222222;
+  overflow-x: hidden;
+}
+
+/* Custom Scrollbar */
+::-webkit-scrollbar {
+  width: 6px;
+  height: 6px;
+}
+::-webkit-scrollbar-track {
+  background: transparent;
+}
+::-webkit-scrollbar-thumb {
+  background: rgba(0, 0, 0, 0.1);
+  border-radius: 4px;
+}
+::-webkit-scrollbar-thumb:hover {
+  background: rgba(0, 0, 0, 0.2);
+}
+
+/* Custom transitions and glassmorphism subtle highlights */
+.glass-panel {
+  background: rgba(255, 255, 255, 0.85);
+  backdrop-filter: blur(8px);
+  border: 1px solid var(--color-amber-border);
+}
+
+.dark .glass-panel {
+  background: rgba(24, 25, 28, 0.85);
+  backdrop-filter: blur(8px);
+  border: 1px solid #2A2C30;
+}

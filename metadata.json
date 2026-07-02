@@ -1,0 +1,6 @@
+{
+  "name": "Amber Creation Hub",
+  "description": "Internal Operations Dashboard for AmberStudent's Creation Team.",
+  "requestFramePermissions": [],
+  "majorCapabilities": ["MAJOR_CAPABILITY_SERVER_SIDE_GEMINI_API"]
+}
